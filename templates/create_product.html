@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    <title>Create product</title>
+{% endblock %}
+
+
+{% block content %}
+    <span><a href="{% url 'list_return_product' %}">Return product</a></span>
+    <span><a href="{% url 'create_product' %}">Create product</a></span>
+    <br>
+    <span><a href="{% url 'logout' %}">Logout</a></span>
+    <span><a href="{% url 'list_product' %}">Product list</a></span>
+    <br><hr><br>
+
+    <form action="{% url 'create_product' %}" method="post">
+        {{ form.as_ul }}
+        {% csrf_token %}
+        <input type="submit" value="Создать">
+    </form>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    <title>Update product</title>
+{% endblock %}
+
+
+{% block content %}
+    <span><a href="{% url 'list_return_product' %}">Return product</a></span>
+    <span><a href="{% url 'create_product' %}">Create product</a></span>
+    <br>
+    <span><a href="{% url 'logout' %}">Logout</a></span>
+    <span><a href="{% url 'list_product' %}">Product list</a></span>
+    <br><hr><br>
+
+    <form action="{% url 'update_product' object.pk %}" method="post">
+        {% for field in form %}
+            <div style="margin: 10px">
+                {{ field.errors }}
+                {{ field.label_tag }} {{ field }}
+            </div>
+        {% endfor %}
+        {% csrf_token %}
+        <br>
+        <input type="submit" value="Обновить">
+    </form>
+{% endblock %}

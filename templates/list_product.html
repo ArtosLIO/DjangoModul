@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Product</title>
+{% endblock %}
+
+{% block content %}
+    {% if request.user.is_staff %}
+        <span><a href="{% url 'list_return_product' %}">Return product</a></span>
+        <span><a href="{% url 'create_product' %}">Create product</a></span>
+        <br>
+    {% endif %} 
+    {% if request.user.id == None %}
+        <span><a href="{% url 'login' %}">Login</a></span><br>
+        <span><a href="{% url 'registration' %}">Registration</a></span>
+    {% else %}
+        <span><a href="{% url 'logout' %}">Logout</a></span>
+    {% endif %}
+        <span><a href="{% url 'list_buy' %}">Buy list</a></span>
+
+    <br><hr><br>
+    <div>
+        {% for product in object_list %}
+            <div>
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.description }}</p>
+                <pre><i>Стоимость: {{ product.price }}  Количество: {{ product.quantity }}</i></pre>
+                <hr><br>
+
+                {% if request.user.id != None %}
+                    {% if request.user.is_staff %}
+                        <form action="{% url 'update_product' product.id %}" method="get">
+                            <input type="submit" value="Обновить">
+                        </form>
+                    {% else %}
+                        <form action="{% url 'create_buy' product.id %}" method="post">
+                            Количество: {{ buy_form.quantity }}
+                            {% csrf_token %}
+                            <input type="submit" value="Купить" >
+                        </form>
+                    {% endif %}
+                {% endif %}
+                <hr><br>
+            </div>
+        {% endfor %}
+    </div>
+    <div>
+
+    </div>
+{% endblock %}

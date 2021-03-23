@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load mytags %}
+
+
+{% block title %}
+    <title>Return product</title>
+{% endblock %}
+
+
+{% block content %}
+    <span><a href="{% url 'list_return_product' %}">Return product</a></span>
+    <span><a href="{% url 'create_product' %}">Create product</a></span>
+    <br>
+    <span><a href="{% url 'logout' %}">Logout</a></span>
+    <span><a href="{% url 'list_product' %}">Product list</a></span>
+    <br><hr><br>
+
+    <div>
+    {% for object in object_list %}
+        <article>
+            <h3>Продукт: {{ object.buy.product.name }}</h3>
+            <h3>Покупатель: {{ object.buy.user.username }}</h3>
+            <pre><i>Количество: {{ object.buy.quantity }}  Стоимость: {{ object.buy.product.price }}</i></pre>
+            <p><i>Сумма: {{ object.buy.product.price|multiply:object.buy.quantity }}</i></p>
+            <p><i>Дата покупки: {{ object.buy.buy_at|date:'Y/m/d - h:i:s' }}</i></p>
+            <p><i>Запрос о возврате: {{ object.return_product_at|date:'Y/m/d - h:i:s' }}</i></p>
+
+            <form action="{% url 'delete_buy' object.buy.pk %}" method="post">
+                {% csrf_token %}
+                <input type="submit" value="Подтвердить возврат">
+            </form>
+            <form action="{% url 'delete_return_product' object.pk %}" method="post">
+                {% csrf_token %}
+                <input type="submit" value="Отказать в возврате">
+            </form>
+        </article>
+        <hr><br>
+    {% endfor %}
+    </div>
+
+
+
+{% endblock %}
