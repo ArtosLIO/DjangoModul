@@ -93,13 +93,6 @@ class CreateBuy(LoginRequiredMixin, CreateView):
     http_method_names = ['post', 'get']
     success_url = '/'
 
-    def form_valid(self, form, id_product):
-        max_quantity = Product.objects.get(pk=id_product).quantity
-        if 0 < int(form.data.get('quantity', 0)) <= max_quantity:
-            return True
-        form.add_error(None, "Недопустипоме значение покупки.")
-
-
     def post(self, request, *args, **kwargs):
         self.object = None
         form = self.get_form()
@@ -109,25 +102,8 @@ class CreateBuy(LoginRequiredMixin, CreateView):
             buy = form.save(commit=False)
             buy.product = Product.objects.get(pk=id_product)
             buy.user = request.user
-            buy.buy_at = datetime.now()
-
-            if self.form_valid(form=form, id_product=id_product):
-                update_user = MyUser.objects.get(pk=request.user.id)
-                if update_user.money >= buy.product.price * buy.quantity:
-                    update_user.money -= buy.product.price * buy.quantity
-                    buy.product.quantity -= buy.quantity
-                    update_user.save()
-                    buy.product.save()
-                    buy.save()
-                    return super().form_valid(form)
-                else:
-                    form.add_error(None, "У вас не хватает денег")
-
-            your_buy = {'name': buy.product.name, 'quantity': buy.product.quantity, 'price': buy.product.price,
-                        'description': buy.product.description}
-            self.extra_context = {'buy': your_buy}
-            return self.form_invalid(form)
-
+            buy.save()
+            return super().form_valid(form)
         else:
             return self.form_invalid(form)
 
@@ -146,12 +122,11 @@ class ReturnBuy(LoginRequiredMixin, CreateView):
     fields = ['buy']
     http_method_names = ['get']
     template_name = 'list_buy.html'
-    success_url = 'buy/list/'
-
+    success_url = '/buy/list/'
 
     def get(self, request, *args, **kwargs):
         buy_id = kwargs.get('pk')
-        end_time = datetime.now() - timedelta(minutes=5)
+        end_time = datetime.now() - timedelta(minutes=30)
         obj_buy = Buy.objects.filter(pk=buy_id, buy_at__gte=end_time)
         self.extra_context = {'object_list': Buy.objects.filter(user=self.request.user)}
 

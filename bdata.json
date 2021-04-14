@@ -1,0 +1,1361 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2021-03-19T08:59:50.781Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Product object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2021-03-19T09:00:01.147Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Buy object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2021-03-19T09:00:20.914Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Buy object (1)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2021-03-19T11:55:20.702Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Product object (3)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2021-03-21T10:06:28.217Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "Buy object (5)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2021-03-21T10:06:42.830Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Buy object (4)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2021-03-21T10:06:42.862Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Buy object (3)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2021-03-21T10:31:49.819Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "user1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Money\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2021-03-21T10:33:45.635Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Product object (2)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Quantity\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2021-03-21T10:33:54.910Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "user1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Money\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2021-03-21T10:34:04.885Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "Buy object (7)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2021-03-21T10:34:04.900Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "Buy object (6)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2021-03-21T13:42:57.639Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Product object (3)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Quantity\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2021-03-22T10:45:04.235Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "12",
+      "object_repr": "Buy object (12)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2021-03-22T10:45:11.266Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "Buy object (11)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2021-03-22T12:13:41.792Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "14",
+      "object_repr": "Buy object (14)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2021-03-22T12:13:41.799Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "13",
+      "object_repr": "Buy object (13)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2021-03-22T12:14:04.476Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "user1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Money\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2021-03-22T12:14:13.726Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Product object (3)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Quantity\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2021-03-22T12:14:18.668Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Product object (2)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Quantity\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2021-03-22T12:39:28.274Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "20",
+      "object_repr": "Buy object (20)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2021-03-22T12:39:28.279Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "19",
+      "object_repr": "Buy object (19)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2021-03-22T12:39:28.280Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "18",
+      "object_repr": "Buy object (18)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2021-03-22T12:39:28.282Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "17",
+      "object_repr": "Buy object (17)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2021-03-22T12:39:28.284Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "16",
+      "object_repr": "Buy object (16)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2021-03-22T12:39:28.286Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "15",
+      "object_repr": "Buy object (15)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2021-03-22T12:39:36.610Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "user1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Money\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2021-03-22T12:39:45.415Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Product object (2)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2021-03-22T12:39:50.351Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Product object (3)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Quantity\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2021-03-22T12:52:48.048Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "23",
+      "object_repr": "Buy object (23)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2021-03-22T12:52:48.057Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "22",
+      "object_repr": "Buy object (22)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2021-03-22T12:52:48.060Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "21",
+      "object_repr": "Buy object (21)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2021-03-22T12:52:48.064Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "Buy object (10)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2021-03-22T12:52:48.067Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "9",
+      "object_repr": "Buy object (9)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2021-03-22T12:52:48.069Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "Buy object (8)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2021-03-22T12:52:58.038Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "user1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Money\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2021-03-22T12:54:44.305Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "24",
+      "object_repr": "Buy object (24)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2021-03-22T13:19:17.886Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "13",
+      "object_repr": "ReturnProduct object (13)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2021-03-22T13:19:17.890Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "12",
+      "object_repr": "ReturnProduct object (12)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2021-03-22T13:19:17.892Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "11",
+      "object_repr": "ReturnProduct object (11)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2021-03-22T13:19:17.894Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "10",
+      "object_repr": "ReturnProduct object (10)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2021-03-22T13:19:17.896Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "9",
+      "object_repr": "ReturnProduct object (9)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2021-03-22T13:19:17.899Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "8",
+      "object_repr": "ReturnProduct object (8)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2021-03-22T13:19:17.901Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "7",
+      "object_repr": "ReturnProduct object (7)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2021-03-22T13:19:17.902Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "ReturnProduct object (6)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2021-03-22T13:19:17.904Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "ReturnProduct object (5)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2021-03-22T13:19:17.906Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "ReturnProduct object (4)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2021-03-22T13:19:17.907Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "ReturnProduct object (3)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2021-03-22T13:19:31.834Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "15",
+      "object_repr": "ReturnProduct object (15)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2021-03-22T13:19:31.840Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "14",
+      "object_repr": "ReturnProduct object (14)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2021-03-22T13:36:31.787Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Product object (2)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Quantity\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2021-03-22T13:36:37.259Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Product object (3)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Quantity\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2021-03-22T13:36:46.217Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "user1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Money\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2021-03-22T13:36:53.563Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "31",
+      "object_repr": "Buy object (31)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2021-03-22T13:36:53.568Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "30",
+      "object_repr": "Buy object (30)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2021-03-22T13:36:53.570Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "29",
+      "object_repr": "Buy object (29)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2021-03-22T13:36:53.572Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "28",
+      "object_repr": "Buy object (28)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2021-03-22T13:36:53.573Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "27",
+      "object_repr": "Buy object (27)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2021-03-22T13:36:53.575Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "26",
+      "object_repr": "Buy object (26)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2021-03-22T13:36:53.577Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "25",
+      "object_repr": "Buy object (25)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2021-03-23T13:38:17.728Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "user1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Money\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 6,
+      "codename": "add_myuser"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 6,
+      "codename": "change_myuser"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 6,
+      "codename": "delete_myuser"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 6,
+      "codename": "view_myuser"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add buy",
+      "content_type": 7,
+      "codename": "add_buy"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change buy",
+      "content_type": 7,
+      "codename": "change_buy"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete buy",
+      "content_type": 7,
+      "codename": "delete_buy"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view buy",
+      "content_type": 7,
+      "codename": "view_buy"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add product",
+      "content_type": 8,
+      "codename": "add_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change product",
+      "content_type": 8,
+      "codename": "change_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete product",
+      "content_type": 8,
+      "codename": "delete_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view product",
+      "content_type": 8,
+      "codename": "view_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add return product",
+      "content_type": 9,
+      "codename": "add_returnproduct"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change return product",
+      "content_type": 9,
+      "codename": "change_returnproduct"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete return product",
+      "content_type": 9,
+      "codename": "delete_returnproduct"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view return product",
+      "content_type": 9,
+      "codename": "view_returnproduct"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "buyline",
+      "model": "myuser"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "buyline",
+      "model": "buy"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "buyline",
+      "model": "product"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "buyline",
+      "model": "returnproduct"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "j2x94ydktnkwia1cvg3357a43kcjvgtr",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSEwtDxcuu83NAMzStVAUtqV8d-VpAtd3eSek_MSM-5bnvfG67yQOAsQp98vYnpw6YDuWG5Vplq2dYmyK_KgTU6V-Hk53L9AxpZ71hAHB4NDQEhX5dEbgw5Zfxd08joqq2kMSY82WuQhRRvYgAIKZEC8P9GEN10:1lNK8K:rd_igm2SKaJ1MZVfGw0b1EnDiPJskVnlGjyfZJkspDU",
+      "expire_date": "2021-04-02T18:46:04.885Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "jd0x0yi0dpqdebw11vezq3vd6wcvqd17",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pACUwou3XuGZpiZStVAUtqV8e7apAvd_vfef6kRtzWPW5NlnFmdlVGn3y0hPaTsgO9YblVTLesyJ70r-qBNXyvL83K4fwcZW_7WiZ0QEIk3QxfZBNv3jiYkxmFwxseOJo4ECaKFGMQLg4dgJ-HepgDq_QH87DhG:1lOhf0:FZJkESqAdRxVzKhmmjTZ6uj0GSFUn2ZgdP9RfFpXv7A",
+      "expire_date": "2021-04-06T14:05:30.370Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "lg110zn09d0nxymz8mzocx6yf1y3md0z",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pACUwou3XuGZpiZStVAUtqV8e7apAvd_vfef6kRtzWPW5NlnFmdlVGn3y0hPaTsgO9YblVTLesyJ70r-qBNXyvL83K4fwcZW_7WiZ0QEIk3QxfZBNv3jiYkxmFwxseOJo4ECaKFGMQLg4dgJ-HepgDq_QH87DhG:1lOgmw:4zKMLwzckj4Wb-imthPOvlU1QMLonGOfcDIuJmVCCj4",
+      "expire_date": "2021-04-06T13:09:38.304Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "ob9v3lveizfl9kvzki3s2viclb7hbms3",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pACUwou3XuGZpiZStVAUtqV8e7apAvd_vfef6kRtzWPW5NlnFmdlVGn3y0hPaTsgO9YblVTLesyJ70r-qBNXyvL83K4fwcZW_7WiZ0QEIk3QxfZBNv3jiYkxmFwxseOJo4ECaKFGMQLg4dgJ-HepgDq_QH87DhG:1lNyJl:JdDO_qWpCcTZHHFxeIsaZwFpkEyZW9jZ9FPDxd1hYHM",
+      "expire_date": "2021-04-04T13:40:33.045Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "vhz1clbu71ka8bu0dukobdrr9f3p60kz",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pACUwou3XuGZpiZStVAUtqV8e7apAvd_vfef6kRtzWPW5NlnFmdlVGn3y0hPaTsgO9YblVTLesyJ70r-qBNXyvL83K4fwcZW_7WiZ0QEIk3QxfZBNv3jiYkxmFwxseOJo4ECaKFGMQLg4dgJ-HepgDq_QH87DhG:1lMymS:oAsqMGgu0def6Qq8Z8B-juV2-XmgciXxlq06CuFePgA",
+      "expire_date": "2021-04-01T19:58:04.523Z"
+    }
+  },
+  {
+    "model": "buyline.myuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$216000$jKir8Sofl0UH$hFlQo7SJXYf348EWSqCqmN+0yiIk97HownvYAn+vc4I=",
+      "last_login": "2021-03-23T14:05:30.355Z",
+      "is_superuser": true,
+      "username": "service",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-03-18T18:16:22.573Z",
+      "money": 0,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "buyline.myuser",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$216000$x4dw5l5gplUj$H8ZwJfzW9XYduOXi/JwVRD/25+upCK7QtkBIpg/dUhI=",
+      "last_login": "2021-03-23T13:40:23.659Z",
+      "is_superuser": false,
+      "username": "user1",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-03-19T08:55:59Z",
+      "money": 50000,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "buyline.myuser",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$216000$6LLbLzQh4ES0$zB2O0yi/aM2Q+15ho5EVtW4N5vw/PgZjlFbKFUor+Vg=",
+      "last_login": "2021-03-22T10:46:54.305Z",
+      "is_superuser": false,
+      "username": "user2",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-03-22T10:46:29.178Z",
+      "money": 10000,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "buyline.product",
+    "pk": 2,
+    "fields": {
+      "name": "Notebook",
+      "description": "New fast notebook",
+      "price": 5000,
+      "picture": "",
+      "quantity": 10
+    }
+  },
+  {
+    "model": "buyline.product",
+    "pk": 3,
+    "fields": {
+      "name": "Table",
+      "description": "Table for your PK",
+      "price": 2000,
+      "picture": "",
+      "quantity": 12
+    }
+  },
+  {
+    "model": "buyline.product",
+    "pk": 4,
+    "fields": {
+      "name": "PK",
+      "description": "You home PK",
+      "price": 8000,
+      "picture": "",
+      "quantity": 10
+    }
+  },
+  {
+    "model": "buyline.buy",
+    "pk": 33,
+    "fields": {
+      "product": 3,
+      "user": 2,
+      "quantity": 2,
+      "buy_at": "2021-03-22T15:37:46.238Z"
+    }
+  },
+  {
+    "model": "buyline.buy",
+    "pk": 34,
+    "fields": {
+      "product": 3,
+      "user": 2,
+      "quantity": 1,
+      "buy_at": "2021-03-22T15:37:54.243Z"
+    }
+  },
+  {
+    "model": "buyline.buy",
+    "pk": 35,
+    "fields": {
+      "product": 3,
+      "user": 2,
+      "quantity": 5,
+      "buy_at": "2021-03-23T15:44:49.544Z"
+    }
+  },
+  {
+    "model": "buyline.buy",
+    "pk": 36,
+    "fields": {
+      "product": 2,
+      "user": 2,
+      "quantity": 1,
+      "buy_at": "2021-03-23T15:50:20.319Z"
+    }
+  }
+]

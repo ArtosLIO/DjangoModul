@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'buyline',
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -65,7 +67,6 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-
             'libraries':{
                 'mytags': 'buyline.tamplatetags.mytags',
             }
@@ -83,10 +84,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'moduldjangodb',
-        'USER': 'djangomoduluser',
-        'PASSWORD': '123qwe',
+        # 'USER': 'djangomoduluser',
+        # 'PASSWORD': '123qwe',
+        'USER': 'postgres',
+        'PASSWORD': '123',
         'HOST': 'localhost',
         'PORT': '5432',
+        'TEST': {
+            'NAME': 'mytestbd',
+        },
     }
 }
 
@@ -131,3 +137,16 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+}
+
+
+

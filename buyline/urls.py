@@ -1,10 +1,33 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from rest_framework import routers
+from rest_framework.authtoken import views
 
+from .API.resorces import AuthorViewSet, BookViewSet, ExampleView, UserSetView, ListProductView, \
+    CreateReturnProductView, SuperuserReturnProductView, AdminProductView
 from .views import Login, Registration, Logout, ListProducts, CreateBuy, ListBuyUsers, ReturnBuy, \
     ListReturnProduct, DeleteReturnProduct, DeleteBuy, UpdateProduct, CreateProduct
 
+router = routers.SimpleRouter()
+router.register(r'author', AuthorViewSet)
+router.register(r'book', BookViewSet)
+# Modul REST
+router.register(r'admin', SuperuserReturnProductView)
+router.register(r'cuproduct', AdminProductView)
+
 urlpatterns = [
+    path('api-token-auth/', views.obtain_auth_token),
+    path('api/', include(router.urls)),
+    path('example/', ExampleView.as_view()),
+
+    # Modul REST
+
+    path('api/list/', ListProductView.as_view()),
+    path('api/user/', UserSetView.as_view()),
+    path('api/user/return/', CreateReturnProductView.as_view()),
+
+    # Modul Django
+
     path('login/', Login.as_view(), name='login'),
     path('registration/', Registration.as_view(), name='registration'),
     path('loguot/', Logout.as_view(), name='logout'),

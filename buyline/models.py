@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from django.contrib.auth.models import AbstractUser
 from django.db import models
@@ -31,8 +31,8 @@ class Product(models.Model):
 
 
 class Buy(models.Model):
-    product = models.ForeignKey(Product, related_name='product', on_delete=models.PROTECT)
-    user = models.ForeignKey(MyUser, related_name='user', on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, related_name='buy_product', on_delete=models.PROTECT)
+    user = models.ForeignKey(MyUser, related_name='buy_user', on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=1)
     buy_at = models.DateTimeField()
 
@@ -45,17 +45,70 @@ class Buy(models.Model):
     def save(self, *args, **kwargs):
         if not self.id:
             self.buy_at = make_aware(datetime.now())
+            if self.product.quantity >= self.quantity and self.user.money >= self.product.price * self.quantity:
+                self.product.quantity -= self.quantity
+                self.user.money -= self.product.price
+                self.product.save()
+                self.user.save()
+            else:
+                raise Exception(None, "You don`t have money or store don`t have quantity product")
         return super().save(*args, **kwargs)
 
 
 class ReturnProduct(models.Model):
-    buy = models.ForeignKey(Buy, related_name='buy', on_delete=models.CASCADE)
+    buy = models.ForeignKey(Buy, related_name='return_buy', on_delete=models.CASCADE)
     return_product_at = models.DateTimeField()
 
     class Meta:
         ordering = ['-return_product_at']
 
     def save(self, *args, **kwargs):
-        if not self.id:
-            self.return_product_at = make_aware(datetime.now())
+        try:
+            ReturnProduct.objects.get(buy=self.buy_id)
+        except self.DoesNotExist:
+            if not self.id:
+                self.return_product_at = make_aware(datetime.now())
+                if (self.return_product_at - timedelta(minutes=10)) < self.buy.buy_at:
+                    return super().save(*args, **kwargs)
+                else:
+                    raise Exception(None, "Return time is out ")
+        else:
+            raise Exception(None, "The object already exists")
+
+    def delete(self, using=None, keep_parents=False):
+        if keep_parents:
+            self.buy.user.money += self.buy.product.price * self.buy.quantity
+            self.buy.product.quantity += self.buy.quantity
+            self.buy.user.save()
+            self.buy.product.save()
+            self.buy.delete()
+        return super().delete()
+
+
+# 38
+
+class Author(models.Model):
+    name = models.CharField(max_length=150, null=False, blank=False)
+    age = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        ordering = ['name']
+
+
+class Book(models.Model):
+    title = models.CharField(max_length=150)
+    author = models.ForeignKey(Author, related_name='author_book', on_delete=models.CASCADE)
+
+    class Meta:
+        ordering = ['title']
+
+    def save(self, *args, **kwargs):
+        self.title = self.title + '!'
         return super().save(*args, **kwargs)
+
+
+
+
+
+
+
